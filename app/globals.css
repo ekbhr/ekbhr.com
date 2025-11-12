@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Core Web Vitals helpers */
+:root { --ring: 2px; }
+html { scroll-behavior: smooth; }
+img, svg { shape-rendering: crispEdges; }
+* { -webkit-tap-highlight-color: transparent; }

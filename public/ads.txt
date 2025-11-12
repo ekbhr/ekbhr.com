@@ -1,0 +1,3 @@
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+sedo.com, 000000, DIRECT
+yandex.com, 000000, DIRECT
