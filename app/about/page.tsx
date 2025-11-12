@@ -8,7 +8,7 @@ export default function Page() {
       <div className="rounded-3xl bg-gradient-to-br from-white via-brand-surface to-sky-50 p-8 shadow-soft">
         <h1 className="text-3xl font-bold text-brand-primary">Built for Publishers. Focused on Outcomes.</h1>
         <p className="mt-3 max-w-2xl text-sm text-slate-600">
-          We're a specialized publisher monetization team helping digital publishers maximize ad revenue while maintaining exceptional user experience and Core Web Vitals scores.
+          We&apos;re a specialized publisher monetization team helping digital publishers maximize ad revenue while maintaining exceptional user experience and Core Web Vitals scores.
         </p>
       </div>
 
@@ -18,7 +18,7 @@ export default function Page() {
           EKBHR PORTAL is a publisher monetization and ad operations consultancy based in Dubai, United Arab Emirates. We specialize in programmatic advertising, header bidding implementations, and yield optimization for publishers who want to grow revenue without compromising site speed or user experience.
         </p>
         <p className="mt-4 text-slate-600">
-          Our team combines deep technical expertise in ad tech stacks (Prebid.js, Google Ad Manager, Open Bidding) with a focus on performance engineering. We understand that in today's landscape, revenue optimization must work hand-in-hand with Core Web Vitals compliance.
+          Our team combines deep technical expertise in ad tech stacks (Prebid.js, Google Ad Manager, Open Bidding) with a focus on performance engineering. We understand that in today&apos;s landscape, revenue optimization must work hand-in-hand with Core Web Vitals compliance.
         </p>
       </section>
 
@@ -60,7 +60,7 @@ export default function Page() {
             },
             { 
               title: "Privacy by Design", 
-              desc: "GDPR, CCPA, and consent management aren't afterthoughts—they're built into every implementation from day one." 
+              desc: "GDPR, CCPA, and consent management aren&apos;t afterthoughts—they&apos;re built into every implementation from day one." 
             }
           ].map((item) => (
             <div key={item.title} className="rounded-2xl bg-white/80 p-6 shadow-soft">
