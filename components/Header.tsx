@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { company } from "@/lib/config";
 
 const navItems = [
   { href: "/about", label: "About" },
@@ -24,8 +25,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-white/10 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 shadow-[0_8px_24px_rgba(15,23,42,0.06)] before:pointer-events-none before:absolute before:inset-x-0 before:top-full before:h-px before:bg-gradient-to-r before:from-transparent before:via-emerald-300/60 before:to-transparent">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
-        <Link href="/" className="flex items-center gap-2" aria-label="EKBHR PORTAL" onClick={() => setOpen(false)}>
-          <Image src="/logo.svg" alt="EKBHR PORTAL" width={148} height={32} priority />
+        <Link href="/" className="flex items-center gap-2" aria-label={company.name} onClick={() => setOpen(false)}>
+          <Image src="/logo.svg" alt={company.name} width={148} height={32} priority />
         </Link>
 
         <nav className="hidden items-center gap-8 text-base md:flex">

@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { company } from "@/lib/config";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.ekbhr.com"),
+  metadataBase: new URL(company.website.url),
   title: {
-    default: "EKBHR PORTAL — Publisher Monetization & Ad Ops",
-    template: "%s | EKBHR PORTAL"
+    default: `${company.name} — Publisher Monetization & Ad Ops`,
+    template: `%s | ${company.name}`
   },
   description: "Monetize smarter with header bidding, yield optimization, and Core Web Vitals engineering.",
   icons: [{ rel: "icon", url: "/favicon.svg" }]

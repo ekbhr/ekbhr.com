@@ -1,10 +1,11 @@
 import { NextResponse } from "next/server";
+import { company } from "@/lib/config";
 
 export function GET() {
   const body = {
-    seller_id: "ekbhr-0001",
-    name: "EKBHR PORTAL",
-    domain: "ekbhr.com",
+    seller_id: company.seller.sellerId,
+    name: company.seller.name,
+    domain: company.seller.domain,
     seller_type: "PUBLISHER",
     is_confidential: 0
   };

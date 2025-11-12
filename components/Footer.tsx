@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { company, getEmailLink, getPhoneLink } from "@/lib/config";
 
 export function Footer() {
   return (
@@ -8,8 +9,8 @@ export function Footer() {
         <div className="grid gap-10 lg:grid-cols-[2fr,3fr]">
           <div className="space-y-5">
             <div>
-              <div className="text-2xl font-bold tracking-tight text-white">EKBHR PORTAL</div>
-              <p className="mt-3 max-w-sm text-sm text-slate-200/80">Publisher monetization & ad ops engineered for Core Web Vitals.</p>
+              <div className="text-2xl font-bold tracking-tight text-white">{company.name}</div>
+              <p className="mt-3 max-w-sm text-sm text-slate-200/80">{company.tagline}</p>
             </div>
             <div className="inline-flex items-center gap-2 rounded-full border border-emerald-300/40 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-emerald-200">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-300" />
@@ -37,18 +38,18 @@ export function Footer() {
             <div className="space-y-3">
               <div className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-200">Contact</div>
               <ul className="space-y-2 text-slate-200/85">
-                <li><a className="transition hover:text-white" href="mailto:info@ekbhr.com">info@ekbhr.com</a></li>
-                <li><a className="transition hover:text-white" href="tel:+971545100593">+971 54 510 0593</a></li>
-                <li>Dubai, United Arab Emirates</li>
+                <li><a className="transition hover:text-white" href={getEmailLink()}>{company.contact.email}</a></li>
+                <li><a className="transition hover:text-white" href={getPhoneLink()}>{company.contact.phoneFormatted}</a></li>
+                <li>{company.address.full}</li>
               </ul>
             </div>
           </div>
         </div>
 
         <div className="mt-12 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-slate-300/70">
-          <span>© {new Date().getFullYear()} EKBHR PORTAL. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} {company.name}. All rights reserved.</span>
           <div className="flex items-center gap-4">
-            <a className="transition hover:text-white" href="mailto:info@ekbhr.com">Email Us</a>
+            <a className="transition hover:text-white" href={getEmailLink()}>Email Us</a>
             <Link className="transition hover:text-white" href="/contact">Contact Form</Link>
           </div>
         </div>

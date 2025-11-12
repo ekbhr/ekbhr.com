@@ -1,4 +1,5 @@
 import { CTAButton } from "@/components/CTAButton";
+import { company } from "@/lib/config";
 
 export const metadata = { title: "About" };
 
@@ -15,7 +16,7 @@ export default function Page() {
       <section className="rounded-3xl border border-emerald-100 bg-white p-8 shadow-soft">
         <h2 className="text-2xl font-bold text-brand-primary">Who We Are</h2>
         <p className="mt-4 text-slate-600">
-          EKBHR PORTAL is a publisher monetization and ad operations consultancy based in Dubai, United Arab Emirates. We specialize in programmatic advertising, header bidding implementations, and yield optimization for publishers who want to grow revenue without compromising site speed or user experience.
+          {company.name} is a publisher monetization and ad operations consultancy based in {company.address.full}. We specialize in programmatic advertising, header bidding implementations, and yield optimization for publishers who want to grow revenue without compromising site speed or user experience.
         </p>
         <p className="mt-4 text-slate-600">
           Our team combines deep technical expertise in ad tech stacks (Prebid.js, Google Ad Manager, Open Bidding) with a focus on performance engineering. We understand that in today&apos;s landscape, revenue optimization must work hand-in-hand with Core Web Vitals compliance.
@@ -75,7 +76,7 @@ export default function Page() {
         <h2 className="text-2xl font-bold text-brand-primary">Our Footprint</h2>
         <div className="mt-4 space-y-3 text-slate-600">
           <p>
-            <span className="font-semibold text-brand-primary">Headquarters:</span> Dubai, United Arab Emirates
+            <span className="font-semibold text-brand-primary">Headquarters:</span> {company.address.full}
           </p>
           <p>
             <span className="font-semibold text-brand-primary">Service Area:</span> Global (serving publishers worldwide)

@@ -1,4 +1,5 @@
 import nodemailer from "nodemailer";
+import { company } from "./config";
 
 type EmailPayload = {
   subject: string;
@@ -14,7 +15,7 @@ const {
   SMTP_USER,
   SMTP_PASS,
   EMAIL_FROM,
-  EMAIL_TO = "info@ekbhr.com"
+  EMAIL_TO = company.contact.email
 } = process.env;
 
 const isEmailConfigured = Boolean(SMTP_HOST && SMTP_USER && SMTP_PASS);

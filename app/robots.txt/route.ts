@@ -1,7 +1,9 @@
+import { company } from "@/lib/config";
+
 export async function GET() {
   const body = `User-agent: *
 Allow: /
-Sitemap: https://www.ekbhr.com/sitemap.xml
+Sitemap: ${company.website.url}/sitemap.xml
 `;
   return new Response(body, { headers: { "Content-Type": "text/plain" } });
 }

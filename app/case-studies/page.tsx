@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { company } from "@/lib/config";
+
 export const metadata = { title: "Case Studies" };
 
 const data = [
@@ -10,7 +12,7 @@ export default function Page() {
     <div className="space-y-8">
       <div className="rounded-3xl bg-gradient-to-br from-white via-brand-surface to-sky-50 p-8 shadow-soft">
         <h1 className="text-3xl font-bold text-brand-primary">Case Studies</h1>
-        <p className="mt-3 text-sm text-slate-600">See how publishers improved revenue, viewability, and Core Web Vitals with EKBHR PORTAL.</p>
+        <p className="mt-3 text-sm text-slate-600">See how publishers improved revenue, viewability, and Core Web Vitals with {company.name}.</p>
       </div>
       <ul className="grid gap-6 sm:grid-cols-2">
         {data.map(item => (
