@@ -11,7 +11,10 @@ export const metadata: Metadata = {
     template: `%s | ${company.name}`
   },
   description: "Monetize smarter with header bidding, yield optimization, and Core Web Vitals engineering.",
-  icons: [{ rel: "icon", url: "/favicon.svg" }]
+  icons: [{ rel: "icon", url: "/favicon.svg" }],
+  other: {
+    "google-site-verification": "sg4cemj59rgxkfxd"
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

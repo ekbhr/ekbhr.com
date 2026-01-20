@@ -1,3 +1,7 @@
+## 2026-01-20
+
+- added Google site verification meta tag (`sg4cemj59rgxkfxd`) to layout.tsx
+
 ## 2025-11-10
 
 - wired publisher and contact forms to SMTP email notifications with `nodemailer`
