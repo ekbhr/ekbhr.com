@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: "Monetize smarter with header bidding, yield optimization, and Core Web Vitals engineering.",
   icons: [{ rel: "icon", url: "/favicon.svg" }],
   other: {
-    "google-site-verification": "sg4cemj59rgxkfxd"
+    "yandex-verification": "sg4cemj59rgxkfxd"
   }
 };
 
